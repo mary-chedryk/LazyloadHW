@@ -1,0 +1,28 @@
+.lazy-image {
+    height: 800px;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: block;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.lazy-image.loaded {
+    opacity: 1;
+}
+
+.image-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
